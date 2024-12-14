@@ -2,6 +2,10 @@ from rest_framework.viewsets import ModelViewSet
 from .models import Company, Borrower, Loan, Repayment
 from .serializers import CompanySerializer, BorrowerSerializer, LoanSerializer, RepaymentSerializer
 from rest_framework.permissions import IsAuthenticated
+from django.shortcuts import render
+
+def home(request):
+    return render(request, 'core/home.html')
 
 class CompanyViewSet(ModelViewSet):
     queryset = Company.objects.all()

@@ -80,7 +80,7 @@ ROOT_URLCONF = 'microloan_management.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [],  # Leave empty if templates are app-specific
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
