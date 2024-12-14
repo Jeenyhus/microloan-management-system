@@ -1,0 +1,25 @@
+# Python/Django files to ignore
+__pycache__/
+*.pyc
+*.pyo
+*.env
+
+# Virtual environment
+venv/
+env/
+
+# Django specific
+db.sqlite3
+media/
+
+# IDE files
+.idea/
+.vscode/
+
+# Byte-compiled
+*.class
+*.swp
+
+# OS specific
+.DS_Store
+Thumbs.db
